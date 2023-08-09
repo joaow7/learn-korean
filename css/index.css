@@ -1,0 +1,156 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    text-decoration: none;
+    list-style: none;
+    color: inherit !important;
+}
+
+
+body{
+    position: relative;
+    height: 1300px;
+}
+
+.btn-edit{
+    background-color: white !important;
+    color: black !important;
+}
+
+.btn-edit:hover{
+    background-color: gray !important;
+    color: white !important;
+}
+
+/*********** links text color customization *************/
+header .navbar-light .navbar-nav .nav-link{
+    color: black !important;
+}
+
+header .navbar-light .navbar-nav .nav-link:hover{
+    color: #60ABB0 !important;
+}
+
+#banner .col-md-5, .col-md-7{
+    background-color: transparent !important;
+}
+
+#banner{
+    background-image: url('../img/fundo.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+
+/** images banner **/
+
+#banner .img-1{
+    width: 40%;
+    height: 100%;
+}
+
+#banner .img-2{
+    width: 30%;
+    height: 70%;
+}
+
+#banner2 .row .col-md{
+    box-shadow: 3px 3px 29px 0px rgba(0,0,0,0.67);
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5%;
+}
+
+#banner2 .row .col-md img{
+    margin: 0 auto;
+}
+
+#banner2 .row .col-md h4{
+    border-radius: 10px;
+    background-color: black;
+    padding: 5px;
+
+    color:white !important;
+    font-weight: bold;
+}
+
+#banner2 .row .col-md .btn{
+    background-color: black !important;
+    color: white !important;
+
+    margin-bottom: 10px;
+}
+
+#banner2 .row .col-md .btn:hover{
+    background: linear-gradient(to left, red, blue);
+    border: 1.4px solid black;
+    font-weight: bold;
+
+    transition: 0.1s ease all;
+}
+
+/***************** MEDIA QUERIES *****************/
+
+/***************** SMALL DEVICES ****************/
+@media only screen and (max-width: 575.9px){
+
+    #banner .row .col-md-5 h5{
+        margin-top: 15px;
+        padding-right: 5px;
+    }
+    /***********
+    EFEITO DE TRANSIÇÃO DO MENU MOBILE ************/
+    #mostrar{
+        transition: all 0.4s ease-in;
+        position: relative;
+        z-index: 1;
+
+        width: 100% !important;
+        border-top: 1px solid rgb(206, 197, 197);
+        border-radius: 5%;
+    }
+
+    /************
+    EFEITO DO MENU SOBREPOR O BANNER NA PAGINA
+    INICIAL **************/
+
+}
+
+/***************** MEDIUM DEVICES ********************/
+@media only screen and (min-width: 576px){
+ 
+    #banner .row .col-md-5 h5{
+        margin-top: 15px;
+        padding-right: 5px;
+    }
+
+} 
+
+/***************** large DEVICES ********************/
+@media only screen and (max-width: 767px){
+ 
+    #banner2 .row .col-md{
+
+        width: 80%;
+        margin-top: 10px !important;
+        margin: 0 auto;
+        text-align: center;
+    }
+} 
+
+@media only screen and (min-width: 766px){
+
+    #banner2 .row .col-md p{
+        height: 48px; 
+    }
+}

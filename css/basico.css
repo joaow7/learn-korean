@@ -1,0 +1,53 @@
+/** ANIMAÇÃO CARREGAMENTO DA PAGINAÇÃO DA SEÇÃO AULAS/BASICOS **/
+@keyframes anima{
+    from{
+        color: black;
+        background-color: white;
+    }
+    to{
+        color: white !important;
+        background-color: black;
+    }
+}
+
+/** ANIMAÇÃO BORDA PARTE INFERIOR DO NAV DA PAGINA BASICOS**/
+@keyframes bord{
+    from{
+        border-bottom: 10px solid white;
+    }
+    to{
+        border-bottom: 10px solid black;
+    }
+}
+
+
+@media only screen and (min-width: 576px){
+    /*pagina basicos*/
+    #nav-bas .navbar-nav{
+        border-bottom: 10px solid black;
+
+        animation-name: bord;
+        animation-duration: 1.5s;
+
+    }
+
+
+    /*** APLICAÇÃO DE EFEITO DE PAGINAÇÃO NA 
+    PAGINA AULAS / BASICOS ***/
+    #alfabeto #nav-bas .navbar-nav .alfa,
+    #particulas #nav-bas .navbar-nav .parti,
+    #vereadj #nav-bas .navbar-nav .verbadj{
+
+        color: white !important;
+        background-color: black;
+
+        animation-name: anima;
+        animation-duration: 1.5s;
+
+    }
+    
+    #nav-bas .navbar-nav .nav-item{
+        margin-bottom: -1px;
+
+    }
+}

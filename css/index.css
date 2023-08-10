@@ -38,12 +38,8 @@ header .navbar-light .navbar-nav .nav-link:hover{
 }
 
 #banner{
-    background-image: url('../img/fundo.avif');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    
+    background: rgb(61,72,227);
+    background: linear-gradient(298deg, rgba(61,72,227,1) 40%, rgba(194,37,37,1) 67%);
 }
 
 
